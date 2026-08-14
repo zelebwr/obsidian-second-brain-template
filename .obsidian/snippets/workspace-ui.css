@@ -1,0 +1,334 @@
+/* ================================================================= */
+/* 1. MIDNIGHT GRID PALETTE (Refined Accent)                         */
+/* ================================================================= */
+.theme-dark {
+    /* --- BACKGROUNDS --- */
+    --midnight-main: #13111b; /* Main Editor */
+    --midnight-sidebar: #0f0d14; /* Sidebar (Even darker for depth) */
+    --midnight-border: #232136; /* Subtle separation */
+
+    /* --- TEXT --- */
+    --midnight-text: #e3eaf5; /* Icy White */
+    --midnight-muted: #6e6a86; /* Muted Lavender-Grey */
+
+    /* --- THE FIX: NEW ACCENT (Moonlight Lavender) --- */
+    /* Replaces the harsh "Cyber Blue" with a soft Violet-Blue */
+    --midnight-accent: #ab9df2;
+    --midnight-hover: #1f1d2e; /* Subtle highlight for hover states */
+
+    /* --- OVERRIDING DEFAULTS --- */
+    --background-primary: var(--midnight-main);
+    --background-secondary: var(--midnight-sidebar);
+    --text-normal: var(--midnight-text);
+    --text-muted: var(--midnight-muted);
+    --background-modifier-border: var(--midnight-border);
+    --divider-color: var(--midnight-border);
+    --tab-outline-color: var(--midnight-border);
+}
+
+/* ================================================================= */
+/* 2. LEFT SIDEBAR & RIBBON (The Navigation)                         */
+/* ================================================================= */
+
+/* The Ribbon (Far Left Icon Strip) */
+.workspace-ribbon,
+.sidebar-toggle-button.mod-left,
+input {
+    background-color: var(--midnight-sidebar) !important;
+    border-right: 1px solid var(--midnight-border) !important;
+}
+
+/* Ribbon Icons */
+.workspace-ribbon-collapse-btn,
+.side-dock-ribbon-action-button,
+.clickable-icon {
+    color: var(--midnight-muted) !important;
+}
+
+.side-dock-ribbon-action-button:hover,
+.side-dock-ribbon-action-button.is-active {
+    color: var(--midnight-text) !important;
+    background-color: var(--midnight-hover);
+}
+
+/* The File Explorer Container */
+.workspace-split.mod-left-split,
+.workspace-split.mod-left-split .workspace-leaf-content {
+    background-color: var(--midnight-sidebar) !important;
+}
+
+/* File Explorer Text */
+.nav-file-title,
+.nav-folder-title {
+    color: var(--midnight-muted);
+}
+.nav-file-title:hover,
+.nav-folder-title:hover {
+    color: var(--midnight-text);
+    background-color: var(--midnight-hover);
+}
+/* Active File Highlight */
+.nav-file-title.is-active,
+.clickable-icon:hover {
+    background-color: var(--midnight-hover);
+    color: var(--midnight-accent);
+    border-left: 2px solid var(--midnight-accent);
+}
+
+/* ================================================================= */
+/* 3. TABS & TITLEBAR (The Top Chrome)                               */
+/* ================================================================= */
+
+/* The Tab Container Bar */
+.workspace-tab-header-container {
+    background-color: var(--midnight-sidebar) !important;
+    border-bottom: 1px solid var(--midnight-border) !important;
+}
+
+/* 1. Inactive Tabs (Fade them out) */
+.workspace-tab-header {
+    background-color: transparent !important;
+    color: var(--midnight-muted) !important;
+}
+
+/* 2. Active Tab (Connect to Editor) */
+.workspace-tab-header.is-active {
+    background-color: var(--midnight-main) !important; /* Matches Editor BG */
+    color: var(--midnight-accent) !important;
+    box-shadow: none !important; /* Remove default 3D effects */
+    border-top: 2px solid var(--midnight-accent); /* Cyber Blue Top Line */
+}
+
+.workspace-tab-header:not(.is-active) {
+    color: var(--midnight-muted) !important;
+}
+
+/* 3. Titlebar Buttons (Minimize/Close) */
+.titlebar-button-container {
+    background-color: var(--midnight-sidebar);
+}
+.titlebar-button {
+    opacity: 0.6;
+}
+
+/* ================================================================= */
+/* 4. RIGHT SIDEBAR (Tools & Outline)                                */
+/* ================================================================= */
+
+/* Container */
+.workspace-split.mod-right-split,
+.workspace-split.mod-right-split .workspace-leaf-content {
+    background-color: var(--midnight-sidebar) !important;
+    border-left: 1px solid var(--midnight-border) !important;
+}
+
+/* Headers in Right Sidebar (e.g. "Outline", "Backlinks") */
+.workspace-leaf-header {
+    background-color: var(--midnight-sidebar) !important;
+    border-bottom: 1px solid var(--midnight-border);
+}
+
+/* Icons in Right Sidebar */
+.workspace-leaf-header-title,
+.view-header-title {
+    color: var(--midnight-muted);
+    font-weight: 600;
+}
+
+/* ================================================================= */
+/* 3. RAINBOW SIDEBAR (Hover & Highlight Effects)                    */
+/* ================================================================= */
+
+/* --- Base Logic --- */
+.nav-folder-title {
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease; /* Fast & snappy */
+    border-radius: 4px;
+}
+
+/* --- 00 MAPS (Moonlight Silver) --- */
+.nav-folder-title[data-path^="00"] {
+    color: #c0caf5 !important;
+}
+.nav-folder-title[data-path^="00"]:hover,
+.nav-folder-title[data-path^="00"].is-active {
+    background-color: rgba(192, 202, 245, 0.3) !important; /* The Glow */
+    color: #ffffff !important;
+}
+
+/* --- 01 PROJECTS (Soft Rose) --- */
+.nav-folder-title[data-path^="01"] {
+    color: #f7768e !important;
+}
+.nav-folder-title[data-path^="01"]:hover,
+.nav-folder-title[data-path^="01"].is-active {
+    background-color: rgba(247, 118, 142, 0.3) !important;
+    color: #ffdae0 !important;
+}
+
+/* --- 02 AREAS (Soft Orange) --- */
+.nav-folder-title[data-path^="02"] {
+    color: #ff9e64 !important;
+}
+.nav-folder-title[data-path^="02"]:hover,
+.nav-folder-title[data-path^="02"].is-active {
+    background-color: rgba(255, 158, 100, 0.3) !important;
+    color: #ffe6d5 !important;
+}
+
+/* --- 03 RESOURCES (Soft Gold) --- */
+.nav-folder-title[data-path^="03"] {
+    color: #e0af68 !important;
+}
+.nav-folder-title[data-path^="03"]:hover,
+.nav-folder-title[data-path^="03"].is-active {
+    background-color: rgba(224, 175, 104, 0.3) !important;
+    color: #fdf0d5 !important;
+}
+
+/* --- 04 PERMANENT (Soft Sage Green) --- */
+.nav-folder-title[data-path^="04"] {
+    color: #9ece6a !important;
+}
+.nav-folder-title[data-path^="04"]:hover,
+.nav-folder-title[data-path^="04"].is-active {
+    background-color: rgba(158, 206, 106, 0.3) !important;
+    color: #e3fccf !important;
+}
+
+/* --- 05 FLEETING (Soft Teal) --- */
+.nav-folder-title[data-path^="05"] {
+    color: #73daca !important;
+}
+.nav-folder-title[data-path^="05"]:hover,
+.nav-folder-title[data-path^="05"].is-active {
+    background-color: rgba(115, 218, 202, 0.3) !important;
+    color: #ccfbf4 !important;
+}
+
+/* --- 06 DAILY (Soft Sky Blue) --- */
+.nav-folder-title[data-path^="06"] {
+    color: #7dcfff !important;
+}
+.nav-folder-title[data-path^="06"]:hover,
+.nav-folder-title[data-path^="06"].is-active {
+    background-color: rgba(125, 207, 255, 0.3) !important;
+    color: #e0f4ff !important;
+}
+
+/* --- 07 ARCHIVES (Muted Grey-Blue) --- */
+.nav-folder-title[data-path^="07"] {
+    color: #7aa2f7 !important; /* Bumped brightness for visibility */
+}
+.nav-folder-title[data-path^="07"]:hover,
+.nav-folder-title[data-path^="07"].is-active {
+    background-color: rgba(122, 162, 247, 0.3) !important;
+    color: #dae6ff !important;
+}
+
+/* --- 99 META (Soft Purple) --- */
+.nav-folder-title[data-path^="99"] {
+    color: #bb9af7 !important;
+}
+.nav-folder-title[data-path^="99"]:hover,
+.nav-folder-title[data-path^="99"].is-active {
+    background-color: rgba(187, 154, 247, 0.3) !important;
+    color: #eee5ff !important;
+}
+
+/* ================================================================= */
+/* 4. CHECKBOX REPAIR & STYLING                                      */
+/* ================================================================= */
+
+input[type="checkbox"].task-list-item-checkbox,
+input[type="checkbox"].metadata-input-checkbox {
+    /* 1. Reset Shape (Square with soft corners) */
+    border-radius: 4px !important;
+
+    /* 2. Unchecked State (Dark & Subtle) */
+    border: 1px solid var(--midnight-muted) !important;
+    background-color: var(--midnight-sidebar) !important;
+
+    /* 3. WIPE OUT the 'broken' style */
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    /* 4. Sizing & Layout */
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 8px !important;
+    position: relative;
+    top: 2px; /* Slight alignment fix for text */
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* 5. Checked State (Your Lavender Accent) */
+input[type="checkbox"].task-list-item-checkbox:checked,
+input[type="checkbox"].metadata-input-checkbox:checked {
+    background-color: var(--midnight-accent) !important;
+    border-color: var(--midnight-accent) !important;
+
+    /* 6. The Checkmark Icon (Manually re-injected to guarantee visibility) */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+/* 7. Hover Effect (User Feedback) */
+input[type="checkbox"].task-list-item-checkbox:hover,
+input[type="checkbox"].metadata-input-checkbox:hover {
+    border-color: var(--midnight-text) !important;
+    background-color: var(--midnight-hover) !important;
+}
+
+/* ================================================================= */
+/* 5. ACTIVE FILE HIGHLIGHT (The Attention Grabber)                  */
+/* ================================================================= */
+
+/* Target the specific active file in the navigation tree */
+.tree-item-self.nav-file-title.is-active {
+    /* 1. Structural Anchor: Thick left border to instantly ground the eye */
+    border-left: 4px solid var(--midnight-accent) !important;
+
+    /* 2. Shape: Flat against the left margin, rounded on the right */
+    border-radius: 0 4px 4px 0 !important;
+
+    /* 3. Background: A heavier 20% wash of your Lavender accent */
+    background-color: rgb(73, 59, 125) !important;
+
+    /* 4. Text Contrast: Pure white to separate it from the muted siblings */
+    color: #ffffff !important;
+    font-weight: 700 !important;
+
+    /* 5. The Glow: A localized text shadow that acts like an LED backlight */
+    text-shadow: 0px 0px 10px rgba(171, 157, 242, 0.8) !important;
+}
+
+/* Ensure the icon next to the active file also brightens up */
+.tree-item-self.nav-file-title.is-active .nav-file-icon {
+    color: var(--midnight-accent) !important;
+    filter: drop-shadow(0px 0px 4px rgba(171, 157, 242, 0.6));
+}
+
+/* ================================================================= */
+/* 6. CALLOUT TWEAKS                                                 */
+/* ================================================================= */
+
+
+/* Balance spacing inside callouts by padding the content area */
+.callout-content {
+    padding-block: 0.8em !important;
+}
+
+/* Remove the list's own outer spacing so the callout padding controls it */
+.callout-content > :is(ol, ul) {
+    margin-block: 0 !important;
+}
+
+/* Remove the paragraph's own outer spacing so the callout padding controls it instead */
+.callout-content > :is(p) { 
+    margin: 0 !important;
+}

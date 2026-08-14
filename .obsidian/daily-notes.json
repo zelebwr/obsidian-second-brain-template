@@ -1,0 +1,5 @@
+{
+  "folder": "06_daily",
+  "template": "99_meta/templates/script_daily_journal",
+  "format": "YYYY-MM-DD dddd"
+}

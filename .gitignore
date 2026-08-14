@@ -1,0 +1,13 @@
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/graph.json
+.obsidian/cache/
+.obsidian/plugins/omnisearch/cache.json
+.obsidian/plugins/omnisearch/index/
+.obsidian/plugins/dataview/
+.trash
+.DS_Store
+Thumbs.db
+desktop.ini
+.env
+.history/

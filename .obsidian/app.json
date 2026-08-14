@@ -1,0 +1,40 @@
+{
+  "useMarkdownLinks": false,
+  "newLinkFormat": "absolute",
+  "attachmentFolderPath": "99_meta/assets",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 80
+  },
+  "focusNewTab": false,
+  "showLineNumber": true,
+  "readableLineLength": false,
+  "newFileFolderPath": "05_fleeting",
+  "mobileToolbarCommands": [
+    "editor:undo",
+    "editor:redo",
+    "editor:insert-tag",
+    "editor:toggle-bold",
+    "editor:toggle-italics",
+    "editor:insert-callout",
+    "editor:indent-list",
+    "editor:unindent-list",
+    "editor:save-file",
+    "editor:toggle-bullet-list",
+    "editor:toggle-numbered-list",
+    "editor:cycle-list-checklist",
+    "editor:insert-link",
+    "editor:toggle-code",
+    "editor:toggle-strikethrough",
+    "editor:toggle-highlight",
+    "obsidian-text-format::private:title-case",
+    "editor:configure-toolbar"
+  ],
+  "showUnsupportedFiles": true,
+  "vimMode": false
+}

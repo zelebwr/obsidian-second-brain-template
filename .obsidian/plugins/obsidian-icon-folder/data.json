@@ -1,0 +1,88 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiArrowRight"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [
+      {
+        "rule": "00_maps_of_content",
+        "icon": "LiCompass",
+        "for": "everything",
+        "order": 0
+      },
+      {
+        "rule": "01_projects",
+        "icon": "LiPencil",
+        "for": "everything",
+        "order": 1
+      },
+      {
+        "rule": "02_areas",
+        "icon": "LiLayoutDashboard",
+        "for": "everything",
+        "order": 2
+      },
+      {
+        "rule": "03_resources",
+        "icon": "LiLibrary",
+        "for": "everything",
+        "order": 3
+      },
+      {
+        "rule": "04_permanent",
+        "icon": "LiBrain",
+        "for": "everything",
+        "order": 4
+      },
+      {
+        "rule": "05_fleeting",
+        "icon": "FiWind",
+        "for": "everything",
+        "order": 5
+      },
+      {
+        "rule": "06_daily",
+        "icon": "LiCalendar",
+        "for": "everything",
+        "order": 6
+      },
+      {
+        "rule": "07_archives",
+        "icon": "BoBxArchiveIn",
+        "for": "everything",
+        "order": 7
+      },
+      {
+        "rule": "99_meta",
+        "icon": "LiWrench",
+        "for": "everything",
+        "order": 8
+      }
+    ],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  }
+}

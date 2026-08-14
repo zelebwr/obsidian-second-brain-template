@@ -1,0 +1,13 @@
+{
+  "enabledCssSnippets": [
+    "typogrphy",
+    "typography",
+    "workspace-ui"
+  ],
+  "theme": "obsidian",
+  "accentColor": "#ab9df2",
+  "cssTheme": "Minimal",
+  "textFontFamily": "Atkinson Hyperlegible",
+  "interfaceFontFamily": "Atkinson Hyperlegible",
+  "monospaceFontFamily": "Atkinson Hyperlegible"
+}
