@@ -1,6 +1,6 @@
 ---
 date_created: 2026-07-25T15:16
-date_modified: 2026-08-14T16:29
+date_modified: 2026-08-15T06:02
 ---
 
 # 🧠 Second Brain Vault: Panduan Penggunaan
@@ -144,11 +144,9 @@ Pelacakan kebiasaan berjalan secara **otomatis di seluruh vault**:
 
 - Tuliskan tugas rutin di catatan mana saja (misalnya di Daily Journal) dengan tag `#habit`:
 
-    Markdown
-
-    ```
-    - [ ] Olahraga pagi #habit
-    ```
+```markdown
+- [ ] Olahraga pagi #habit
+```
 
 - Saat tugas dicentang selesai (`- [x]`), sistem secara otomatis menyematkan tanggal penyelesaian (`completion date`), dan grafik **Daily Habit Tracker** di Dashboard akan langsung terisi.
 
@@ -156,9 +154,7 @@ Pelacakan kebiasaan berjalan secara **otomatis di seluruh vault**:
 
 Tuliskan tugas dengan _checkbox_ markdown standar dan tag `#important`:
 
-Markdown
-
-```
+```markdown
 - [ ] Selesaikan laporan praktikum Big Data #important 📅 2026-08-10
 ```
 
@@ -168,6 +164,8 @@ Markdown
 2. **📜 Q2: Tidak Mendesak & Penting (Jadwalkan):** Tugas berlabel `#important` tanpa batas waktu atau jatuh tempo lebih dari 3 hari.
 3. **📞 Q3: Mendesak & Tidak Penting (Delegasikan / Cepat):** Tugas standar tanpa `#important` yang jatuh tempo sebelum 4 hari ke depan.
 4. **🗑️ Q4: Tidak Mendesak & Tidak Penting (Arsip / Santai):** Tugas umum tanpa tanggal tenggat atau label penting.
+
+![task_management](./99_meta/assets/demo/demo_task_management.mp4)
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 date_created: 2026-08-14T13:19
-date_modified: 2026-08-14T14:56
+date_modified: 2026-08-15T04:28
 ---
 
 # 🏷️ Konvensi Penamaan File, Tag, & Metadata (YAML)

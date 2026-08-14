@@ -1,6 +1,6 @@
 ---
 date_created: 2026-08-14T15:43
-date_modified: 2026-08-14T16:15
+date_modified: 2026-08-15T05:06
 ---
 
 # 🔄 Note Lifecycle & Information Workflow
@@ -61,6 +61,12 @@ The goal of this phase is **zero cognitive friction during note-taking**. Never 
 > 
 > The `05_fleeting` directory serves as a temporary staging area. Review and process these notes periodically rather than letting them accumulate indefinitely.
 
+![daily_journal](../assets/demo/demo_daily_journal.mp4)
+
+![universal_capture](../assets/demo/demo_universal_capture.mp4)
+
+---
+
 # 📚 3. Stage 2: Source Distillation (_Distillation Phase_)
 
 When absorbing external knowledge (programming textbooks, API documentation, course slide decks, or technical articles), summarize those external perspectives inside **`03_resources/`**.
@@ -82,6 +88,10 @@ When absorbing external knowledge (programming textbooks, API documentation, cou
 > [!note] The Role of Resource Notes
 > 
 > Resource notes capture **what the original author stated** (external context). The bottom of this template includes an automated Dataview query that dynamically indexes all atomic concepts you extract from this source over time.
+
+![resources](../assets/demo/demo_resource_note.mp4)
+
+---
 
 # 🧠 4. Stage 3: Evergreen Knowledge Synthesis (_Zettelkasten Phase_)
 
@@ -126,6 +136,10 @@ Permanent notes manage three relational layers:
 3. **`Dependent Concepts (Children)`:** Automated Dataview query listing notes that point to this concept via `up`.
 4. **`Implicit Links`:** Automated Dataview query detecting notes that mention this concept name in body prose without explicit `up` or `related` frontmatter declarations.
 
+![permanent](../assets/demo/demo_permanent_concept.mp4)
+
+---
+
 # 🎯 5. Stage 4: Project & Area Execution (_Execution Phase_)
 
 For time-bound deliverables (hackathons, course assignments, software releases) or long-term life scopes (university semesters, committees), use **`01_projects`** and **`02_areas`**:
@@ -163,6 +177,10 @@ To keep your active workspace lightweight and clutter-free:
 4. **Archiving Fully Distilled Fleeting Logs:**
 
     - Once all factual insights from a lecture note in `05_fleeting/` have been synthesized into `04_permanent/`, move the raw log to **`07_archives/05_fleeting_logs/`** or delete it.
+
+![archiving_tasks](../assets/demo/demo_archive_tasks.mp4)
+
+---
 
 # 🛠️ 7. Automated Maintenance & Formatting
 

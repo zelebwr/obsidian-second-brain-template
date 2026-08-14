@@ -1,6 +1,6 @@
 ---
 date_created: 2026-08-14T15:36
-date_modified: 2026-08-14T17:00
+date_modified: 2026-08-15T06:03
 ---
 
 This vault is an out-of-the-box **Second Brain** template built upon a strict fusion of the **PARA Method**, **Zettelkasten Principles**, and **Eisenhower Matrix Task Management**. This document serves as a quickstart walkthrough to help you navigate workflows, automation scripts, and directory conventions.
@@ -148,11 +148,9 @@ Habit tracking operates **globally across the entire vault**:
 
 - Write recurring habit tasks anywhere (e.g., inside your Daily Journal) using the `#habit` tag:
 
-    Markdown
-
-    ```
-    - [ ] Morning workout #habit
-    ```
+```markdown
+- [ ] Morning workout #habit
+```
 
 - When checked complete (`- [x]`), Obsidian Tasks / Dataview automatically stamps a completion date (`✅ YYYY-MM-DD`), immediately incrementing the **Daily Habit Tracker** matrix on `Dashboard.md`.
 
@@ -170,6 +168,8 @@ Write tasks anywhere using standard markdown checkboxes and the `#important` tag
 2. **📜 Q2: Not Urgent & Important (Schedule):** Tasks tagged with `#important` with no due date or due after 3 days.
 3. **📞 Q3: Urgent & Not Important (Delegate / Quick):** Standard tasks without `#important` due within the next 4 days.
 4. **🗑️ Q4: Not Urgent & Not Important (Backlog / Low Priority):** General tasks without due dates or priority tags.
+
+![task_management](./99_meta/assets/demo/demo_task_management.mp4)
 
 ---
 

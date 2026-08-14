@@ -1,6 +1,6 @@
 ---
 date_created: 2026-08-06T15:00
-date_modified: 2026-08-14T15:38
+date_modified: 2026-08-15T05:59
 ---
 
 # 🏗️ Panduan Arsitektur & Filosofi Vault

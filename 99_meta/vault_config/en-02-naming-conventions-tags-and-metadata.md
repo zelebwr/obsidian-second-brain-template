@@ -1,6 +1,6 @@
 ---
 date_created: 2026-08-14T15:41
-date_modified: 2026-08-14T17:01
+date_modified: 2026-08-15T04:28
 ---
 
 # 🏷️ File Naming Conventions, Tags, & Metadata (YAML)

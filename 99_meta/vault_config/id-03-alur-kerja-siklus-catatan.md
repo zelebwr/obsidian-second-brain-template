@@ -1,6 +1,6 @@
 ---
 date_created: 2026-08-14T15:24
-date_modified: 2026-08-14T15:29
+date_modified: 2026-08-15T05:59
 ---
 
 # 🔄 Siklus Hidup & Alur Kerja Pengelolaan Catatan
@@ -17,7 +17,7 @@ Secara umum, setiap potongan informasi bergerak melalui tahapan-tahapan berikut:
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │ 1. CAPTURE (Penangkapan Cepat)                                              │
 │    Ide mentah, perkuliahan, rapat, khotbah ──► [ 05_fleeting ]              │
-└──────────────────────────────────────┬──────────────────────────────────────┘
+└──────────────────────────────────────┬─────────────────────────────────────┘
                                        │
                                        ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -41,6 +41,8 @@ Secara umum, setiap potongan informasi bergerak melalui tahapan-tahapan berikut:
 └──────────────────────────────────────┘ └─────────────────────────────────────┘
 ````
 
+---
+
 ## ⚡ 2. Tahap 1: Penangkapan Cepat (_Capture Phase_)
 
 Tujuan dari tahap ini adalah **menghilangkan gesekan kognitif (_zero-friction_) saat mencatat**. Jangan memikirkan kerapian format atau penataan folder saat kamu sedang aktif mendengarkan dosen atau rapat.
@@ -60,6 +62,12 @@ Tujuan dari tahap ini adalah **menghilangkan gesekan kognitif (_zero-friction_) 
 > [!tip] Prinsip Fleeting Notes
 > 
 > Folder `05_fleeting` adalah _scratchpad_ sementara. Jangan biarkan catatan di sini menumpuk selamanya tanpa pernah ditinjau ulang.
+
+![daily_journal](../assets/demo/demo_daily_journal.mp4)
+
+![universal_capture](../assets/demo/demo_universal_capture.mp4)
+
+---
 
 ## 📚 3. Tahap 2: Penyaringan Sumber (_Distillation Phase_)
 
@@ -82,6 +90,10 @@ Ketika kamu mempelajari sumber eksternal (buku pemrograman, dokumentasi API, sli
 > [!note] Peran Resource Note
 > 
 > Resource note mencatat **apa kata pembuat materi** (perspektif luar). Bagian bawah template ini memuat query Dataview otomatis yang akan menampilkan konsep-konsep atomik yang nantinya kamu ekstrak dari sumber ini.
+
+![resouces](../assets/demo/demo_resource_note.mp4)
+
+---
 
 ## 🧠 4. Tahap 3: Sintesis Pengetahuan Abadi (_Zettelkasten Phase_)
 
@@ -126,6 +138,10 @@ Di dalam catatan permanen, kamu mengelola 3 jenis keterkaitan:
 3. **`Dependent Concepts (Children)`:** Query Dataview otomatis yang mendata semua catatan yang menunjuk catatan ini sebagai `up`.
 4. **`Implicit Links`:** Query Dataview yang secara otomatis mendeteksi setiap catatan di vault yang menyebutkan nama file ini di dalam teks paragraf, tanpa menduplikasi link `up` atau `related`.
 
+![permanent_notes](../assets/demo/demo_permanent_concept.mp4)
+
+---
+
 ## 🎯 5. Tahap 4: Eksekusi Proyek & Area (_Execution Phase_)
 
 Untuk pengerjaan tugas kuliah berbatas waktu, lomba/hackathon, atau tanggung jawab organisasi, gunakan folder **`01_projects`** dan **`02_areas`**:
@@ -141,6 +157,12 @@ Langkah 2: Pembuatan Catatan Kerja Bebas (Ctrl + N)
    └── Beri nama file secara bebas sesuai kebutuhan kerja.
    └── File baru ini akan otomatis muncul pada tabel "Working Documents" di file "_hub.md"!
 ```
+
+![project](../assets/demo/demo_project.mp4)
+
+![areas](../assets/demo/demo_area.mp4)
+
+---
 
 ## 📦 6. Tahap 5: Pengarsipan (_Archiving Phase_)
 
@@ -163,6 +185,8 @@ Agar ruang kerja vault tetap bersih dan fokus pada hal-hal yang sedang aktif:
 4. **Pengarsipan Log Fleeting yang Selesai Disintesis:**
 
     - Catatan kuliah mentah di `05_fleeting/` yang seluruh faktanya sudah diekstrak ke `04_permanent/` dapat dipindahkan ke **`07_archives/05_fleeting_logs/`** atau dihapus jika tidak lagi diperlukan.
+
+![archiving_tasks](../assets/demo/demo_archive_tasks.mp4)
 
 ## 🛠️ 7. Otomatisasi Pemeliharaan & Format
 
