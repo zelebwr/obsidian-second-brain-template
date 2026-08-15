@@ -1,6 +1,6 @@
 ---
 date_created: 2026-04-03T20:34
-date_modified: 2026-08-06T15:03
+date_modified: 2026-08-15T10:31
 ---
 
 # A. Core Philosophy and Directory Architecture

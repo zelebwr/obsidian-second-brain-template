@@ -87,14 +87,14 @@ exclude_tasks: false
 
 ## Discovered Keyword Matches (Auto-Gathered Old Notes)
 
-> [!info] Notes mentioning "<% domainName %>" in title (Unlinked Candidates)
+> [!info] Notes mentioning "<% domainPrompt %>" in title (Unlinked Candidates)
 > ```dataview
 > TABLE 
 > 	file.folder AS "Location",
 >     file.cday AS "Created"
 > FROM "04_permanent"
 > WHERE file.name != this.file.name 
-> 	AND icontains(file.name, this.domain)
+> 	AND icontains(file.name, "<% domainPrompt %>")
 > 	AND !contains(up, this.file.link)
 > 	AND !contains(file.frontmatter.tags, this.domain)
 > SORT file.cday DESC
