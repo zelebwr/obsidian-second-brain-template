@@ -1,8 +1,11 @@
 ---
-date_created: 2026-06-07T07:21
-date_modified: 2026-08-15T05:46
+id: Dashboard
+aliases: []
+tags: []
 cssclasses:
   - title-center
+date_created: 2026-06-07T07:21
+date_modified: 2026-10-13T11:11
 ---
 
 ```contributionGraph
@@ -98,9 +101,9 @@ cellStyleRules:
 # 🧑‍💼 Responsibilities
 
 - Organisasi A
-- Kepanitiaan B
-- Lomba Y
-- Event Z
+- Kepantitiaan B
+- Lomba X
+- Event Y
 
 ---
 

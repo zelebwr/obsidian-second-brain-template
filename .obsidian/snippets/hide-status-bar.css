@@ -1,0 +1,9 @@
+.status-bar {
+    opacity: 0;
+    transition: 0.2s ease-out;
+}
+
+.status-bar:hover {
+    opacity: 1;
+    transition: 0.2s ease-out;
+}
