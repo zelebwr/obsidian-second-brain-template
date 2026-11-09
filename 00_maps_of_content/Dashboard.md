@@ -1,11 +1,8 @@
 ---
-id: Dashboard
-aliases: []
-tags: []
+date_created: 2026-06-07T07:21
+date_modified: 2026-11-10T01:30
 cssclasses:
   - title-center
-date_created: 2026-06-07T07:21
-date_modified: 2026-10-13T11:11
 ---
 
 ```contributionGraph
@@ -100,10 +97,12 @@ cellStyleRules:
 
 # 🧑‍💼 Responsibilities
 
-- Organisasi A
-- Kepantitiaan B
-- Lomba X
-- Event Y
+- HMIT Ristek
+- UCS Head of TalentDev
+- PKK 2026
+- Compfest Pencairan Dana
+- Beasiswa NUS
+- KKN AI Balikpapan Hanan 
 
 ---
 
@@ -119,6 +118,7 @@ cellStyleRules:
 > (due before tomorrow) OR (scheduled before tomorrow)
 > (no start date) OR (starts before tomorrow)
 > show backlink
+> tags do not include #exclude_tasks
 > sort by due
 > sort by function task.description.includes('#important') ? 0 : 1
 > sort by priority
@@ -142,6 +142,7 @@ cellStyleRules:
 > (((due after today) OR (due today)) AND (due before in 4 days)) OR (((scheduled after today) OR (scheduled today)) AND (scheduled before in 4 days))
 > (no start date) OR (starts before tomorrow)
 > show backlink
+> tags do not include #exclude_tasks
 > sort by due
 > sort by function task.description.includes('#important') ? 0 : 1
 > sort by priority
@@ -166,6 +167,7 @@ cellStyleRules:
 > (no scheduled date) OR (scheduled after in 3 days)
 > (no start date) OR (starts before tomorrow)
 > show backlink
+> tags do not include #exclude_tasks
 > sort by due
 > sort by function task.description.includes('#important') ? 0 : 1
 > sort by priority
@@ -189,6 +191,7 @@ cellStyleRules:
 > (((due after today) OR (due today)) AND (due before in 4 days)) OR (((scheduled after today) OR (scheduled today)) AND (scheduled before in 4 days))
 > (no start date) OR (starts before tomorrow)
 > show backlink
+> tags do not include #exclude_tasks
 > sort by due
 > sort by function task.description.includes('#important') ? 0 : 1
 > sort by priority
@@ -213,6 +216,7 @@ cellStyleRules:
 > (no scheduled date) OR (scheduled after in 3 days)
 > (no start date) OR (starts before tomorrow)
 > show backlink
+> tags do not include #exclude_tasks
 > sort by due
 > sort by function task.description.includes('#important') ? 0 : 1
 > sort by priority
